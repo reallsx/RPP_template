@@ -1,0 +1,52 @@
+\documentclass[12pt]{ruthesis}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{theorem}
+\newtheorem{proposition}{Proposition}
+
+
+\usepackage[style=nature]{biblatex}
+\addbibresource{report_bibliography.bib}
+
+
+\theoremheaderfont{\itshape} \theoremstyle{break}
+
+\title{The title of this report}
+\ctitle{The title of this report}
+\author{Someone}
+\school{Rice University}
+\degree{PhD Candidacy}
+
+\committee {
+        Professor 1 \\
+        Assistant Professor of Physics and Astronomy  \and
+        Professor 2 \\
+        Assistant Professor of Physics and Astronomy \and
+        Professor 3\\
+        Professor of Physics and Astronomy and Chemistry \and
+        Professor 4\\
+        Associate Professor of Physics and Astronomy 
+}
+
+\address{Houston, Texas}
+\donemonth{August} \doneyear{2021} \makeindex
+
+\begin{document}
+
+  \begin{frontmatter}
+   \pagenumbering{roman}
+   \maketitle
+   \tableofcontents
+  \end{frontmatter}
+\pagenumbering{arabic}
+
+\linespacing{1.7}
+
+\include{maintext}
+
+
+\linespacing{1.2}
+\printbibliography
+\end{document}
